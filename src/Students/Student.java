@@ -5,7 +5,7 @@ public class Student {
 	private String surname, name;
 	private int fiz, mat, prog;
 	
-	//Класс студент
+	//Метод студент
 	public Student(String name, String surname) 
 	{
 		this.name = name;
@@ -13,7 +13,7 @@ public class Student {
 	    mat = fiz = prog = -1;
 	}
 	
-	//Класс сдал математика
+	//Метод сдал математика
 	public void PassMat (int mat)
 	{
 		if (mat > 2 && mat <= 5)
@@ -29,7 +29,7 @@ public class Student {
 			}
 	}
 	
-	//Класс сдал физику
+	//Метод сдал физику
 	public void PassFiz (int fiz)
 	{
 		if (fiz > 2 && fiz <= 5)
@@ -45,7 +45,7 @@ public class Student {
 			}
 	}
 	
-	//Класс сдал программирование
+	//Метод сдал программирование
 	public void PassProg (int prog)
 	{
 		if (prog > 2 && prog <= 5)
@@ -61,12 +61,12 @@ public class Student {
 			}
 	}
 	
-	//Класс плохой студент
+	//Метод плохой студент
 	public boolean BadStud() {
 	       return (fiz <= 3) || (mat <= 3) || (prog <= 3);
 	    }
 	
-	//Класс средняя оценка
+	//Метод средняя оценка
 	public double Srednee ()
 	{
 		return 1.0*(mat+fiz+prog)/3;
