@@ -1,6 +1,5 @@
 package Students;
 
-
 public class Student {
 	private String surname, name;
 	private int fiz, mat, prog;
